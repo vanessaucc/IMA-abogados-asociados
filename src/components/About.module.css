@@ -1,5 +1,5 @@
 .section {
-  padding: 7rem 0;
+  padding: 5rem 0;
   background: var(--navy);
   position: relative;
   overflow: hidden;
@@ -22,7 +22,7 @@
 .inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5rem;
+  gap: 4rem;
   align-items: center;
 }
 
@@ -149,9 +149,21 @@
 }
 
 .valueIcon {
-  font-size: 1.5rem;
-  margin-bottom: 0.7rem;
-  display: block;
+  width: 42px;
+  height: 42px;
+  background: rgba(201,169,110,0.12);
+  border: 1px solid rgba(201,169,110,0.2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  margin-bottom: 0.8rem;
+  transition: background 0.3s ease;
+}
+
+.valueCard:hover .valueIcon {
+  background: rgba(201,169,110,0.2);
 }
 
 .valueTitle {
@@ -218,5 +230,5 @@
 
 @media (max-width: 480px) {
   .valuesGrid { grid-template-columns: 1fr; }
-  .section { padding: 5rem 0; }
+  .section { padding: 4rem 0; }
 }

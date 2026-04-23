@@ -2,10 +2,51 @@ import React, { useState, useEffect, useRef } from 'react'
 import styles from './About.module.css'
 
 const values = [
-  { icon: '⚖️', title: 'Justicia', desc: 'Actuamos con integridad y ética profesional en cada caso.' },
-  { icon: '🛡️', title: 'Compromiso', desc: 'Defendemos tus derechos con dedicación absoluta y personalizada.' },
-  { icon: '🤝', title: 'Confianza', desc: 'Construimos relaciones sólidas basadas en la transparencia.' },
-  { icon: '🎯', title: 'Resultados', desc: 'Orientados a obtener el mejor resultado posible para ti.' },
+  {
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <line x1="12" y1="2" x2="12" y2="22" />
+        <path d="M3 7h18" />
+        <path d="M5 7L3 13h4L5 7z" />
+        <path d="M19 7l-2 6h4l-2-6z" />
+        <path d="M5 22h14" />
+      </svg>
+    ),
+    title: 'Justicia',
+    desc: 'Actuamos con integridad y ética profesional en cada caso.',
+  },
+  {
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+      </svg>
+    ),
+    title: 'Compromiso',
+    desc: 'Defendemos tus derechos con dedicación absoluta y personalizada.',
+  },
+  {
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+        <circle cx="9" cy="7" r="4" />
+        <path d="M23 21v-2a4 4 0 00-3-3.87" />
+        <path d="M16 3.13a4 4 0 010 7.75" />
+      </svg>
+    ),
+    title: 'Confianza',
+    desc: 'Construimos relaciones sólidas basadas en la transparencia.',
+  },
+  {
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="10" />
+        <circle cx="12" cy="12" r="6" />
+        <circle cx="12" cy="12" r="2" />
+      </svg>
+    ),
+    title: 'Resultados',
+    desc: 'Orientados a obtener el mejor resultado posible para ti.',
+  },
 ]
 
 export default function About() {
@@ -48,8 +89,8 @@ export default function About() {
           <div className={styles.location}>
             <div className={styles.locationIcon}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-                <circle cx="12" cy="10" r="3"/>
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
               </svg>
             </div>
             <div>

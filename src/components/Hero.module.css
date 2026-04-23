@@ -146,7 +146,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   flex-wrap: wrap;
   animation: fadeInUp 0.7s ease 0.7s both;
 }
@@ -258,10 +258,16 @@
 }
 
 @media (max-width: 768px) {
-  .title { font-size: clamp(2.8rem, 10vw, 4rem); }
-  .stats { gap: 2rem; }
+  .title { font-size: clamp(2.6rem, 10vw, 3.8rem); }
+  .stats { gap: 1.5rem; }
   .scrollHint { display: none; }
   .subtitle br { display: none; }
-  .actions { flex-direction: column; align-items: flex-start; }
+  .actions { flex-direction: column; align-items: flex-start; gap: 0.75rem; margin-bottom: 2.5rem; }
   .btnPrimary, .btnSecondary { width: 100%; justify-content: center; }
+}
+
+@media (max-width: 480px) {
+  .content { padding-top: 5rem; padding-bottom: 3rem; }
+  .badge { font-size: 0.62rem; }
+  .statNum { font-size: 1.8rem; }
 }
