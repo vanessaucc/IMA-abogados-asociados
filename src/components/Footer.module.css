@@ -1,0 +1,140 @@
+.footer {
+  background: #0d1527;
+}
+
+.top {
+  padding: 4rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.brand {}
+
+.logoIma {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 0.05em;
+  line-height: 1;
+  margin-bottom: 0.2rem;
+}
+
+.logoSub {
+  font-family: var(--font-body);
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(201,169,110,0.2);
+}
+
+.brandDesc {
+  font-size: 0.84rem;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+}
+
+.footerCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #25d366;
+  color: var(--white);
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 0.65rem 1.2rem;
+  border-radius: 2px;
+  transition: all 0.25s ease;
+}
+
+.footerCta:hover {
+  background: #1da851;
+  transform: translateY(-1px);
+}
+
+.colTitle {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(201,169,110,0.15);
+}
+
+.footerLink {
+  display: block;
+  background: none;
+  text-align: left;
+  font-family: var(--font-body);
+  font-size: 0.83rem;
+  color: rgba(255,255,255,0.5);
+  padding: 0.3rem 0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  width: 100%;
+}
+
+.footerLink:hover {
+  color: var(--gold-light);
+}
+
+.linksCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactInfo {
+  font-size: 0.83rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.8;
+}
+
+.bottom {
+  padding: 1.2rem 0;
+}
+
+.bottomInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.25);
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.motto {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--gold);
+  opacity: 0.7;
+}
+
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .inner { grid-template-columns: 1fr; }
+  .brand { grid-column: auto; }
+  .bottomInner { flex-direction: column; text-align: center; }
+}
